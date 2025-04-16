@@ -1,14 +1,14 @@
-vpc_name   = "hamza-vpc"
+vpc_name   = "med-vpc"
 cidr_block = "10.0.0.0/16"
 
 public_subnets = [
   {
-    name              = "hamza-public-subnet-1"
+    name              = "med-public-subnet-1"
     cidr_block        = "10.0.1.0/24"
     availability_zone = "us-east-1a"
   },
   {
-    name              = "hamza-public-subnet-2"
+    name              = "med-public-subnet-2"
     cidr_block        = "10.0.2.0/24"
     availability_zone = "us-east-1b"
   }
@@ -16,17 +16,17 @@ public_subnets = [
 
 private_subnets = [
   {
-    name              = "hamza-private-subnet-1"
+    name              = "med-private-subnet-1"
     cidr_block        = "10.0.3.0/24"
     availability_zone = "us-east-1a"
   },
   {
-    name              = "hamza-private-subnet-2"
+    name              = "med-private-subnet-2"
     cidr_block        = "10.0.4.0/24"
     availability_zone = "us-east-1b"
   }
 ]
 
-igw_name          = "hamza-igw"
-eip_name          = "hamza-nat-eip"
-nat_gateway_name  = "hamza-nat"
+igw_name          = "med-igw"
+eip_name          = "med-nat-eip"
+nat_gateway_name  = "med-nat"
