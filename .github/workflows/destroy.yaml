@@ -2,7 +2,15 @@ name: Terraform Destroy
 
 on:
   workflow_dispatch:
-
+    inputs:
+      environment:
+        description: "Select the environment to deploy to (dev or prod)"
+        required: true
+        default: "dev"
+        type: choice
+        options:
+          - dev
+          - prod
 jobs:
   terraform:
     name: Terraform Destroy
