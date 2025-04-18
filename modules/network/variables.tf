@@ -42,8 +42,6 @@ variable "nat_gateway_name" {
 
 variable "env" {
   type = string
-  default = "dev"
-  
 }
 
 variable "public_sg_rules_ingress" {
